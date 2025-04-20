@@ -1,0 +1,6 @@
+<div class="socials-row">
+            <a href="#" title="Use Google">
+                <img src="assets/google.png" alt="Google">
+                Google ile Giriş yap
+            </a>
+        </div>

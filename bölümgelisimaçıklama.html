@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="tr">
+   <head>
+
+      <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>İdari Personel</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link href="templates/shaper_helixultimate/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+      <link href="media/plg_system_uikitassets/css/uikit.min.css?8f8ba9fae00bb2d863218fde5dcb4cc5" rel="stylesheet">
+      <link href="media/vendor/joomla-custom-elements/css/joomla-alert.min.css?0.2.0" rel="stylesheet">
+      <link href="components/com_sppagebuilder/assets/css/animate.min.css?73ee45a029f5bc0e36fdf5699a0b5203" rel="stylesheet">
+      <link href="components/com_sppagebuilder/assets/css/sppagebuilder.css?73ee45a029f5bc0e36fdf5699a0b5203" rel="stylesheet">
+      <link href="media/com_sppagebuilder/assets/iconfont/icofont/icofont.min.css?73ee45a029f5bc0e36fdf5699a0b5203" rel="stylesheet">
+      <link href="css.css?family=Raleway:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" rel="stylesheet">
+      <link href="components/com_sppagebuilder/assets/css/jquery.bxslider.min.css" rel="stylesheet">
+      <link href="plugins/system/jce/css/content.css?badb4208be409b1335b815dde676300e" rel="stylesheet">
+      <link href="templates/shaper_helixultimate/css/bootstrap.min.css" rel="stylesheet">
+      <link href="plugins/system/helixultimate/assets/css/system-j4.min.css" rel="stylesheet">
+      <link href="media/system/css/joomla-fontawesome.min.css?8f8ba9fae00bb2d863218fde5dcb4cc5" rel="stylesheet">
+      <link href="templates/shaper_helixultimate/css/template.css" rel="stylesheet">
+      <link href="templates/shaper_helixultimate/css/presets/default.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/accorcss.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="css/scrollA.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+      <style>
+        .personel-listesi {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        .personel-listesi th, .personel-listesi td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .personel-listesi th {
+            background-color: #f2f2f2;
+        }
+        .kurul-listesi {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        .kurul-listesi th, .kurul-listesi td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .kurul-listesi th {
+            background-color: #f2f2f2;
+        }
+        .kurul-listesi {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        .kurul-listesi th, .kurul-listesi td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .kurul-listesi th {
+            background-color: #f2f2f2;
+        }
+        .personel-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .personel {
+        text-align: center;
+    }
+
+    .name1, .title1, a {
+        color: white;
+        font-weight: bold;
+    }
+    
+
+
+    .custom-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.custom-menu {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-menu li {
+    margin-bottom: 10px;
+}
+
+.custom-menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-menu li a:hover {
+    background-color: #ddd;
+}
+
+.custom-content {
+    flex: 1;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.custom-slider {
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.brand_color28 {
+    background-color: white;
+}
+
+.custom-section ul,
+.custom-section ol {
+  list-style-type: disc; /* Nokta yerine topçuk */
+}
+
+.custom-section ul ul,
+.custom-section ol ol,
+.custom-section ul ol,
+.custom-section ol ul {
+  list-style-type: circle; /* İkinci seviye listeler için daire */
+}
+
+.custom-section ul ul ul,
+.custom-section ol ol ol,
+.custom-section ul ol ul,
+.custom-section ol ul ol {
+  list-style-type: square; /* Üçüncü seviye listeler için kare */
+}
+
+hr {
+  border: 2px solid black; /* Çizgiyi siyah ve kalın yap */
+}
+    </style>
+</head>
+
+<body>
+
+   <!-- baş -->
+   <header>
+         
+    <!-- başb -->
+    <div class="header">
+       <div class="head_top">
+          <div class="container">
+             <div class="row">
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="top-box">
+                   <ul class="sociel_link">
+                    <li> <a  target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCMDxvR4rH6c0ZgrX7jo0wMA"><i class="fa fa-youtube-play"></i></a></li>
+                    <li> <a  target="_blank" rel="noopener noreferrer" href="https://twitter.com/kastamonuunv"><i class="fa fa-twitter"></i></a></li>
+                    <li> <a  target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/kastamonu.unv/"><i class="fa fa-instagram"></i></a></li>
+                    <li> <a  target="_blank" rel="noopener noreferrer" href="#"><i class="fa fa-facebook"></i></a></li>
+                </ul>
+               </div>
+             </div>
+             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="top-box">
+                   <p><strong><b>Kastamonu Üniversitesi | Geleceğini İnşa Edeceğin Üniversite</b></strong></p>
+               </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    
+    <div class="container">
+       <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+             <div class="full">
+                <div class="center-desk">
+                   <div class="logo"> <a href="1index.html"><img src="images/enkücük.png" width="130" height="100" alt="logo"/></a> </div>
+                   
+                </div>
+             </div>
+          </div>
+          <div class="col-xl-7 col-lg-7 col-md-9 col-sm-9" style="margin-top: 40px;">
+            <div class="menu-area">
+                <div class="limit-box">
+                    <nav class="main-menu">
+                        <ul class="menu-area-main">
+                            <li class="active">
+                                <a href="1index.html"><b><strong>Anasayfa</strong></b></a>
+                            </li>
+                            <li class="dropdown ">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b><strong>Yüksekokulumuz</strong></b> <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="2hakkimizda.html"><strong>Hakkimizda</strong></a></li>
+                                    <li><a href="3misyon.html"><strong>Misyon-Vizyon</strong></a></li>
+                                    <li><a href="4organi.html"><strong>Organizasyon Şemasi</strong></a></li>
+                                    <li><a href="5yonetim.html"><strong>Yönetim</strong></a></li>
+                                    <li class="item-203 menu-deeper menu-parent">
+                                        <a href="#"><strong>Personel</strong><span class="menu-toggler"></span></a>
+                                        <ul class="menu-child">
+                                            <li class="item-206"><a href="6akademik.html"><strong>Akademik Personel</strong></a></li>
+                                            <li class="item-207"><a href="7idari.html"><strong>İdari Personel</strong></a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li><a href="https://ubys.kastamonu.edu.tr/AIS/OutcomeBasedLearning/Home/Index?id=zF2TDIFZvk!xDDx!ofo!xBBx!utVtI5A!xGGx!!xGGx!&culture=tr-TRps"><strong>Bologna Bilgi Paketleri</strong></a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b><strong>Bölümler</strong></b> <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="item-203 menu-deeper menu-parent">
+                                        <a href="#"><strong>Bilgisayar Teknolojileri</strong><span class="menu-toggler"></span></a>
+                                        <ul class="menu-child">
+                                            <li class="item-206"><a href="bölümprog.html"><strong>Bilgisayar Programcılığı</strong></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-203 menu-deeper menu-parent">
+                                        <a href="#"><strong>Çocuk Bakim ve Gençlik Hizmetleri</strong><span class="menu-toggler"></span></a>
+                                        <ul class="menu-child">
+                                            <li class="item-206"><a href="bölümgelisim.html"><strong>Çoçuk Gelişimi</strong></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><b>Elektronik ve Otomasyon</b></a></li>
+                                    <li><a href="#"><b>Hukuk</b></a></li>
+                                    <li><a href="#"><b>Muhasebe ve Vergi</b></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="8dokumanlar.html"><b><strong>Dökümanlar</strong></b></a>
+                            </li>
+                            <li>
+                                <a href="contact.html"><b><strong>İç Kontrol</strong></b></a>
+                            </li>
+                            <li class="mean-last">
+                                <a href="9iletisim.html"><b><strong>İletişim</strong></b></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+
+       </div>
+    </div>
+    <!-- başbitiş --> 
+ </header>  
+
+<!-- Marka rengi 2 sınıfı, bir arka plan rengi veya tema belirtmek için kullanılır -->
+<div class="brand_color2">
+    <!-- İçerik konteyneri, sayfanın içeriğini sınırlar ve hizalar -->
+    <div class="container">
+        <!-- Satırlar, içerik öğelerinin hizalanması için kullanılır -->
+        <div class="row">
+            <!-- 12 kolonluk sınıf, genellikle tam sayfa genişliği için kullanılır -->
+            <div class="col-md-12">
+                <!-- Başlık sayfası sınıfı, sayfanın başlığını biçimlendirmek için kullanılır -->
+                <div class="titlepage">
+                    <!-- Beyaz renkte kalın bir başlık -->
+                    <h2 class="text-white"><b><strong>ÇOCUK GELİŞİMİ BÖLÜMÜ</strong></b></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <!-- Marka rengi 5 sınıfı, belirli bir arka plan rengi veya tema için kullanılır -->
+<div class="brand_color5">
+    <!-- İçerik konteyneri, sayfanın içeriğini sınırlar ve hizalar -->
+    <div class="container">
+        <!-- Satırlar, içerik öğelerinin hizalanması için kullanılır -->
+        <div class="row">
+            <!-- 12 kolonluk sınıf, genellikle tam sayfa genişliği için kullanılır -->
+            <div class="col-md-12">
+                <!-- Özel konteyner sınıfı, içeriği özelleştirmek için kullanılır -->
+                <div class="custom-container">
+
+
+                   <!-- Özel menü sınıfı, menü öğelerini biçimlendirmek için kullanılır -->
+<div class="custom-menu">
+    <!-- Liste başlangıcı -->
+    <ul>
+        <!-- Ana Sayfa bağlantısı -->
+        <li><a href="#ana-sayfa" class="menu-link">Ana Sayfa</a></li>
+        <!-- Genel Bilgiler bağlantısı -->
+        <li><a href="#genel-bilgiler" class="menu-link">Genel Bilgiler</a></li>
+        <!-- Ders Programı bağlantısı -->
+        <li><a href="#ders-programi" class="menu-link">Ders Programı</a></li>
+        <!-- Ders Kataloğu bağlantısı -->
+        <li><a href="#ders-katalogu" class="menu-link">Ders Kataloğu</a></li>
+        <!-- Akademik Kadro bağlantısı -->
+        <li><a href="#akademik-kadro" class="menu-link">Akademik Kadro</a></li>
+        <!-- Öğretim Planı bağlantısı -->
+        <li><a href="#ogretim-plani" class="menu-link">Öğretim Planı</a></li>
+        <!-- Ders İçerikleri bağlantısı -->
+        <li><a href="#ders-icerikleri" class="menu-link">Ders İçerikleri</a></li>
+        <!-- Bütün Haberler bağlantısı -->
+        <li><a href="#butun-haberler" class="menu-link">Bütün Haberler</a></li>
+        <!-- Bütün Duyurular bağlantısı -->
+        <li><a href="#butun-duyurular" class="menu-link">Bütün Duyurular</a></li>
+        <!-- Bütün Etkinlikler bağlantısı -->
+        <li><a href="#butun-etkinlikler" class="menu-link">Bütün Etkinlikler</a></li>
+        <!-- İletişim bağlantısı -->
+        <li><a href="#iletisim" class="menu-link">İletişim</a></li>
+    </ul>
+</div>
+
+                    <!-- Özel içerik sınıfı, içeriği biçimlendirmek için kullanılır -->
+<div class="custom-content">
+    <!-- Ana Sayfa bölümü için özel bölüm sınıfı -->
+    <div id="ana-sayfa" class="custom-section">
+        <!-- Özel kaydırıcı sınıfı, bir görüntü kaydırıcısını biçimlendirmek için kullanılır -->
+        <div class="custom-slider">
+            <!-- Yalnızca slaytlar için Carousel kullanımı -->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <!-- Carousel içeriği -->
+                <div class="carousel-inner">
+                    <!-- İlk slayt -->
+                    <div class="carousel-item active">
+                        <!-- İlk slayt resmi -->
+                        <img class="d-block w-100" src="images/slider10.png" alt="First slide">
+                    </div>
+                    <!-- İkinci slayt -->
+                    <div class="carousel-item">
+                        <!-- İkinci slayt resmi -->
+                        <img class="d-block w-100" src="images/slider13.png" alt="Second slide">
+                    </div>
+                    <!-- Üçüncü slayt -->
+                    <div class="carousel-item">
+                        <!-- Üçüncü slayt resmi -->
+                        <img class="d-block w-100" src="images/slider5.png" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        
+                        <!-- Genel Bilgiler bölümü -->
+<div id="genel-bilgiler" class="custom-section">
+    <!-- Başlık -->
+    <b><strong><h2 style="color: black; text-align: center; font-weight: bold">Genel Bilgiler</h2></strong></b>
+    <!-- Metin içeriği -->
+    <b><p style="color: black; text-align: center; font-weight: bold ; font-size: 18px;">
+        Çocuk gelişimi programı, erken çocukluk dönemi içerisindeki çocukların tüm gelişim alanlarını desteklemek üzere akademik bilgi ve uygulamalı beceriler geliştirmeyi, programdan mezun olan öğrencilerin öz yeterlik inancına sahip, kendilerini sürekli yenileyen, topluma faydalı işler yapan, okul öncesi eğitim döneminde olan ve özel eğitime gereksinim duyan çocuklarla yakından ilgilenen, donanımlı meslek elemanları yetiştirmeyi esas almaktadır.
+        <br>
+        Evrensel ölçütlere uygun eğitim sistemi içerisinde, erken çocukluk döneminde çocukların fiziksel, psikomotor, bilişsel, dil, sosyal ve duygusal alanlarda gelişimlerine yönelik eğitim vermeyi hedefleyen, çocukların özelliklerini tanıyan, gereksinimlerinin farkında olan, çocuk haklarının farkında olan ve gözeten, etkin iletişimin yanı sıra yaratıcı zekâsını da eğitim ortamına katan, bilgisayar, drama, müzik vb. eğitimleri veren yardımcı eğitmenler yetiştirmeyi amaçlamaktadır.
+        <br>
+        Bu programın mezunları erken çocukluk eğitimi veren kurumlarda, okulların ana sınıflarında, kreşlerde, hastanelerin çocuk servislerindeki oyun odalarında, özel eğitim ve rehabilitasyon merkezlerinde, Ana Çocuk Sağlığı Merkezlerinde, yataklı tedavi veren kurumlarda çocuk gelişimi ve eğitimi konusunda yeterli bilgiye sahip yardımcı eğitmen olarak; çocuk yayınları ve oyuncakları sektörlerinde tasarımcı olarak ve çocuk gelişimi ve eğitimi alanında hizmet veren birçok sektörde yardımcı eğitmen/öğretmen olarak çalışabilmektedirler.
+        <br>
+        Ön Lisans Mezuniyet Alanlarına Göre Dikey Geçiş Yapılabilecek Lisans Programları*
+    </p></b>
+</div>
+
+                            <!-- Kalın vurgulu liste içeren bölüm -->
+<b><strong>
+    <!-- Liste başlangıcı -->
+    <ul style="color: white; text-align: center;">
+        <!-- Liste öğeleri -->
+        <li>Çocuk Gelişimi</li>
+        <li>Okul Öncesi Öğretmenliği</li>
+        <li>Özel Eğitim Öğretmenliği</li>
+        <li>Sağlık Yönetimi</li>
+        <li>Sosyal Hizmet</li>
+    </ul>
+</strong></b>
+<!-- Açıklama metni -->
+<p style="color: black; text-align: center;font-weight: bold ; ">
+    *2021 DGS Kılavuzu (Tablo2)
+</p>
+
+        </div>
+
+                          
+                        
+        <div id="ders-programi" class="custom-section">
+            <!-- Ders Programı başlığı -->
+            <h2 style="color: black; text-align: center; font-weight: bold;">Ders Programı</h2>
+            <br>
+            <!-- 2023-2024 Eğitim Öğretim Yılı Bahar Dönemi 1. Öğretim 1. Sınıf Ders Programı (2018 Müfredatı) -->
+            <b><strong><p style="color: black; font-weight: bold;">
+                2023-2024 Eğitim Öğretim Yılı Bahar Dönemi 1. Öğretim 1. Sınıf Ders Programına (2018 Müfredatı) 
+                <a href="pdfler/cocukgelsiim/Ders_Programlari/24bcocukgelisimi2018_1.pdf" target="_blank">Buradan</a> Ulaşabilirsiniz.
+            </p></strong></b>
+            <!-- 2023-2024 Eğitim Öğretim Yılı Bahar Dönemi 1. Öğretim 1. Sınıf Ders Programı (2020 Müfredatı) -->
+            <b><strong><p style="color: black; font-weight: bold;">
+                2023-2024 Eğitim Öğretim Yılı Bahar Dönemi 1. Öğretim 1. Sınıf Ders Programına (2020 Müfredatı) 
+                <a href="pdfler/cocukgelsiim/Ders_Programlari/24bcocukgelisimi2018_2.pdf" target="_blank">Buradan</a> Ulaşabilirsiniz.
+            </p></strong></b>
+            <!-- 2023-2024 Eğitim Öğretim Yılı Güz Dönemi 1. Öğretim 1. Sınıf Ders Programı (2021 Müfredatı) -->
+            <b><strong><p style="color: black; font-weight: bold;">
+                2023-2024 Eğitim Öğretim Yılı Güz Dönemi 1. Öğretim 1. Sınıf Ders Programına (2021 Müfredatı) 
+                <a href="pdfler/cocukgelsiim/Ders_Programlari/24bcocukgelisimi2019_1_2i.o_.pdf" target="_blank">Buradan</a> Ulaşabilirsiniz.
+            </p></strong></b>
+            <!-- 2023-2024 Eğitim Öğretim Yılı Güz Dönemi 1. Öğretim 2. Sınıf Ders Programı (2018 Müfredatı) -->
+            <b><strong><p style="color: black; font-weight: bold;">
+                2023-2024 Eğitim Öğretim Yılı Güz Dönemi 1. Öğretim 2. Sınıf Ders Programına (2018 Müfredatı) 
+                <a href="pdfler/cocukgelsiim/Ders_Programlari/24bcocukgelisimi2019_2_2i.o_.pdf" target="_blank">Buradan</a> Ulaşabilirsiniz.
+            </p></strong></b>
+            <!-- 2023-2024 Eğitim Öğretim Yılı Güz Dönemi 1. Öğretim 2. Sınıf Ders Programı (2020 Müfredatı) -->
+            <b><strong><p style="color: black; font-weight: bold;">
+                2023-2024 Eğitim Öğretim Yılı Güz Dönemi 1. Öğretim 2. Sınıf Ders Programına (2020 Müfredatı) 
+                <a href="pdfler/cocukgelsiim/Ders_Programlari/24bcocukgelisimi2020_1.pdf" target="_blank">Buradan</a> Ulaşabilirsiniz.
+            </p></strong></b>
+            <!-- 2023-2024 Eğitim Öğretim Yılı Güz Dönemi 1. Öğretim 2. Sınıf Ders Programı (2021 Müfredatı) -->
+            <b><strong><p style="color: black; font-weight: bold;">
+                2023-2024 Eğitim Öğretim Yılı Güz Dönemi 1. Öğretim 2. Sınıf Ders Programına (2021 Müfredatı) 
+                <a href="pdfler/cocukgelsiim/Ders_Programlari/24bcocukgelisimi2020_1_2i.o_.pdf" target="_blank">Buradan</a> Ulaşabilirsiniz.
+            </p></strong></b>
+            <!-- Diğer ders programları buraya eklenebilir -->
+        </div>
+        
+                            
+                          
+        <div id="ders-katalogu" class="custom-section">
+            <!-- Ders Kataloğu başlığı -->
+            <h2 style="color: black; text-align: center; font-weight: bold;">Ders Kataloğu</h2>
+            <br>
+            <!-- 2020 Müfredatı Ders Kataloğu Çocuk Gelişimi Programı -->
+            <b><strong><p style="color: black; font-weight: bold;">
+                2020 Müfredatı Ders Kataloğu Çocuk Gelişimi Programı için ==&gt; 
+                <a href="pdfler/cocukgelsiim/Ders_Katalogu/Cocuk_Gelisimi_Ders_Katalogu.pdf" target="_blank">TIKLAYINIZ</a>
+            </p></strong></b>
+            <!-- 2020 Yılı Öncesi İçin Uygulanacak Ön Lisans Programları Çocuk Gelişimi Programı -->
+            <b><strong><p style="color: black; font-weight: bold;">
+                2020 Yılı Öncesi İçin Uygulanacak Ön Lisans Programları Çocuk Gelişimi Programı için ==&gt; 
+                <a href="pdfler/cocukgelsiim/Ders_Katalogu/Cocuk_Gelisimi_Ders_Katalogu_2020.pdf" target="_blank">TIKLAYINIZ</a>
+            </p></strong></b>
+            <!-- 2021 Müfredatı Ders Kataloğu Yenilenen Çocuk Gelişimi Programı -->
+            <b><strong><p style="color: black; font-weight: bold;">
+                2021 Müfredatı Ders Kataloğu Yenilenen Çocuk Gelişimi Programı için ==&gt; 
+                <a href="pdfler/cocukgelsiim/Ders_Katalogu/Cocuk-2021-ders_katalog.pdf" target="_blank">TIKLAYINIZ</a>
+            </p></strong></b>
+        </div>
+        
+        <div id="akademik-kadro" class="custom-section">
+            <!-- Akademik Kadro başlığı -->
+            <div class="faq-content">
+                <div class="row">
+                    <!-- Öğr. Gör. Ayşenur SEKMAN YAY -->
+                    <div class="col-md-3">
+                        <img src="vesikalıklar/aysenur-vesikalik1.jpg" width="600" height="600" alt="Vesikalık Fotoğraf 1">
+                        <p style="color: black; font-weight: bold;">Öğr. Gör. Ayşenur SEKMAN YAY<br>Bölüm Başkanı</p>
+                        <p style="color: black; font-weight: bold;"><a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=BE19BE5CCC875819">YÖK AKADEMİK</a></p>
+                    </div>
+                    <!-- Öğr. Gör. Rukiye DEĞİRMEN -->
+                    <div class="col-md-3">
+                        <img src="vesikalıklar/rukiye-degirmen.jpg" width="600" height="600" alt="Vesikalık Fotoğraf 1">
+                        <p style="color: black; font-weight: bold;">Öğr. Gör. Rukiye DEĞİRMEN</p>
+                        <p style="color: black; font-weight: bold;"><a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=2B1CCD7A4DFE421F">YÖK AKADEMİK</a></p>
+                    </div>
+                    <!-- Öğr. Gör. Gülnur ERDOĞAN -->
+                    <div class="col-md-3">
+                        <img src="vesikalıklar/gulnur.jpg" width="600" height="600" alt="Vesikalık Fotoğraf 1">
+                        <p style="color: black; font-weight: bold;">Öğr. Gör. Gülnur ERDOĞAN</p>
+                        <p style="color: black; font-weight: bold;"><a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=AEA5A680574619FF">YÖK AKADEMİK</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ders-icerikleri" class="custom-section">
+            <!-- Ders İçerikleri başlığı -->
+            <h2 style="color: black; text-align: center;font-weight: bold;">Ders İçerikleri</h2>
+            <br>
+            <!-- 2020 Müfredatı Ders Kataloğu Çocuk Gelişimi Programı Ders İçerikleri -->
+            <b><strong><p style="color: black; font-weight: bold;">2020 Müfredatı Ders Kataloğu Çocuk Gelişimi Programı Ders İçerikleri için ==> <a href="pdfler/cocukgelsiim/Ders_Icerikleri/Cocuk_Gelisimi_Ders_Icerikleri.pdf" target="_blank">TIKLAYINIZ</a></p></strong></b>
+            <!-- 2020 Yılı Öncesi İçin Uygulanacak Ön Lisans Programları Çocuk Gelişimi Programı Ders İçerikleri -->
+            <b><strong><p style="color: black; font-weight: bold;">2020 Yılı Öncesi İçin Uygulanacak Ön Lisans Programları Çocuk Gelişimi Programı Ders İçerikleri için ==> <a href="pdfler/cocukgelsiim/Ders_Icerikleri/Cocuk_Gelisimi_Ders_Icerikleri_2020.pdf" target="_blank">TIKLAYINIZ</a></p></strong></b>
+            <!-- 2021 Müfredatı Ders Kataloğu Yenilenen Çocuk Gelişimi Programı Ders İçerikleri -->
+            <b><strong><p style="color: black; font-weight: bold;">2021 Müfredatı Ders Kataloğu Yenilenen Çocuk Gelişimi Programı Ders İçerikleri için ==> <a href="pdfler/cocukgelsiim/Ders_Icerikleri/Cocuk-2021-ders_icerik.pdf" target="_blank">TIKLAYINIZ</a></p></strong></b>
+        </div>
+        
+
+        <div id="butun-haberler" class="custom-section">
+            <!-- Bütün Haberler başlığı -->
+            <h2 style="color: black; text-align: center;font-weight: bold ;">Bütün Haberler</h2>
+            <!-- Haberlerin sıralandığı sütunlar için row -->
+            <div class="row">
+                <!-- Haberlerin içerikleri bu kısımda yer alacak -->
+                                <!-- İlk haber kartı -->
+            <div class="col-md-6 mb-3">
+                <div class="card">
+                    <!-- Haber resmi -->
+                    <img src="haberresim/res03.jpg" class="card-img-top" alt="Haber Resmi 1">
+                    <div class="card-body">
+                        <!-- Haber başlığı -->
+                        <h3 class="card-title" style="font-weight: bold" >Kopladan haber</h3>
+                        <!-- Haber metni -->
+                        <p class="card-text">selamnaber</p>
+                        <!-- Detaylar için buton -->
+                        <a href="#" class="btn btn-primary">Detaylar</a>
+                    </div>
+                </div>
+            </div>
+
+                                <!-- İkinci haber kartı -->
+                                <div class="col-md-6 mb-3">
+                                    <div class="card">
+                                        <img src="haberresim/E1.jpg" class="card-img-top" alt="Haber Resmi 2">
+                                        <div class="card-body">
+                                            <h3 class="card-title" style="font-weight: bold" >Kopladan haber</h3>
+                                            <p class="card-text">selamnaber</p>
+                                            <a href="#" class="btn btn-primary">Detaylar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card">
+                                        <img src="haberresim/E21.jpg" class="card-img-top" alt="Haber Resmi 2">
+                                        <div class="card-body">
+                                            <h3 class="card-title" style="font-weight: bold" >Kopladan haber</h3>
+                                            <p class="card-text">selamnaber</p>
+                                            <a href="#" class="btn btn-primary">Detaylar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card">
+                                        <img src="haberresim/IMG_9881.jpg" class="card-img-top" alt="Haber Resmi 2">
+                                        <div class="card-body">
+                                            <h3 class="card-title" style="font-weight: bold" >Kopladan haber</h3>
+                                            <p class="card-text">selamnaber</p>
+                                            <a href="#" class="btn btn-primary">Detaylar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card">
+                                        <img src="haberresim/06.jpg" class="card-img-top" alt="Haber Resmi 2">
+                                        <div class="card-body">
+                                            <h3 class="card-title" style="font-weight: bold" >Kopladan haber</h3>
+                                            <p class="card-text">selamnaber</p>
+                                            <a href="#" class="btn btn-primary">Detaylar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card">
+                                        <img src="haberresim/IMG_6466.jpg" class="card-img-top" alt="Haber Resmi 2">
+                                        <div class="card-body">
+                                            <h3 class="card-title" style="font-weight: bold" >Kopladan haber</h3>
+                                            <p class="card-text">selamnaber</p>
+                                            <a href="#" class="btn btn-primary">Detaylar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card">
+                                        <img src="haberresim/resim5B.jpg" class="card-img-top" alt="Haber Resmi 2">
+                                        <div class="card-body">
+                                            <h3 class="card-title" style="font-weight: bold" >Kopladan haber</h3>
+                                            <p class="card-text">selamnaber</p>
+                                            <a href="#" class="btn btn-primary">Detaylar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card">
+                                        <img src="haberresim/gorsel.jpg" class="card-img-top" alt="Haber Resmi 2">
+                                        <div class="card-body">
+                                            <h3 class="card-title" style="font-weight: bold" >Kopladan haber</h3>
+                                            <p class="card-text">selamnaber</p>
+                                            <a href="#" class="btn btn-primary">Detaylar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                     <!-- "Bütün Duyurular" başlığı olan bir bölüm oluşturuluyor -->
+<div id="butun-duyurular" class="custom-section">
+    <!-- Başlık: "Bütün Duyurular". Stil: Siyah renkte, ortalanmış ve kalın -->
+    <h2 style="color: black; text-align: center; font-weight: bold;">Bütün Duyurular</h2>
+</div>
+
+                                <!-- İlk haber kartı -->
+<div class="col-md-6 mb-3">
+    <!-- Bir kart oluşturuluyor -->
+    <div class="card">
+        <!-- Kartın üst kısmı - Resim -->
+        <img src="haberresim/res03.jpg" class="card-img-top" alt="Haber Resmi 1">
+        <!-- Kartın içeriği -->
+        <div class="card-body">
+            <!-- Kart başlığı -->
+            <h3 class="card-title" style="font-weight: bold">Kopladan haber</h3>
+            <!-- Kart metni -->
+            <p class="card-text">selamnaber</p>
+            <!-- Detaylar için bir bağlantı -->
+            <a href="#" class="btn btn-primary">Detaylar</a>
+        </div>
+    </div>
+</div>
+
+                                <!-- İkinci haber kartı -->
+                                <div class="col-md-6 mb-3">
+                                    <div class="card">
+                                        <img src="haberresim/E1.jpg" class="card-img-top" alt="Haber Resmi 2">
+                                        <div class="card-body">
+                                            <h3 class="card-title" style="font-weight: bold" >Kopladan haber</h3>
+                                            <p class="card-text">selamnaber</p>
+                                            <a href="#" class="btn btn-primary">Detaylar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card">
+                                        <img src="haberresim/E21.jpg" class="card-img-top" alt="Haber Resmi 2">
+                                        <div class="card-body">
+                                            <h3 class="card-title" style="font-weight: bold" >Kopladan haber</h3>
+                                            <p class="card-text">selamnaber</p>
+                                            <a href="#" class="btn btn-primary">Detaylar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card">
+                                        <img src="haberresim/IMG_9881.jpg" class="card-img-top" alt="Haber Resmi 2">
+                                        <div class="card-body">
+                                            <h3 class="card-title" style="font-weight: bold" >Kopladan haber</h3>
+                                            <p class="card-text">selamnaber</p>
+                                            <a href="#" class="btn btn-primary">Detaylar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card">
+                                        <img src="haberresim/06.jpg" class="card-img-top" alt="Haber Resmi 2">
+                                        <div class="card-body">
+                                            <h3 class="card-title" style="font-weight: bold" >Kopladan haber</h3>
+                                            <p class="card-text">selamnaber</p>
+                                            <a href="#" class="btn btn-primary">Detaylar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card">
+                                        <img src="haberresim/IMG_6466.jpg" class="card-img-top" alt="Haber Resmi 2">
+                                        <div class="card-body">
+                                            <h3 class="card-title" style="font-weight: bold" >Kopladan haber</h3>
+                                            <p class="card-text">selamnaber</p>
+                                            <a href="#" class="btn btn-primary">Detaylar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card">
+                                        <img src="haberresim/resim5B.jpg" class="card-img-top" alt="Haber Resmi 2">
+                                        <div class="card-body">
+                                            <h3 class="card-title" style="font-weight: bold" >Kopladan haber</h3>
+                                            <p class="card-text">selamnaber</p>
+                                            <a href="#" class="btn btn-primary">Detaylar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card">
+                                        <img src="haberresim/gorsel.jpg" class="card-img-top" alt="Haber Resmi 2">
+                                        <div class="card-body">
+                                            <h3 class="card-title" style="font-weight: bold" >Kopladan haber</h3>
+                                            <p class="card-text">selamnaber</p>
+                                            <a href="#" class="btn btn-primary">Detaylar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                </div> 
+            </div>
+            <!-- İletişim bölümü -->
+<div id="iletisim" class="custom-section">
+    <!-- Bir konteyner içinde sıralı bir dizi öğe oluşturuyoruz -->
+    <div class="container">
+        <!-- İçeriği yatayda ortalamak için sıralı bir dizi öğe oluşturuyoruz -->
+        <div class="row justify-content-center">
+            <!-- 8 kolon genişliği olan bir sütun -->
+            <div class="col-md-8">
+                <!-- Başlık -->
+                <div class="titlepage">
+                    <!-- Başlık metni -->
+                    <h2 class="text-black; font-weight: bold; text-align: center;">İletişim</h2>
+                    <!-- Bir tablo oluşturuluyor -->
+                    <table class="text-black mx-auto">
+
+                                    <!-- Tablo başlığı -->
+<tr>
+    <!-- Unvan/Ad-Soyad sütunu -->
+    <th>Unvanı/Adı Soyadı</th>
+    <!-- Dahili telefon numarası sütunu -->
+    <th>Dahili</th>
+    <!-- E-posta adresi sütunu -->
+    <th>Mail Adresi</th>
+</tr>
+<!-- Birinci kişinin bilgileri -->
+<tr style="font-weight: bold">
+    <!-- Unvan/Ad-Soyad -->
+    <td>Öğr. Gör. Berrak Deniz POLAT</td>
+    <!-- Dahili telefon numarası -->
+    <td>0 366 280 55 11</td>
+    <!-- E-posta adresi (mailto bağlantısı ile) -->
+    <td><a href="mailto:bdpolat@kastamonu.edu.tr">bdpolat@kastamonu.edu.tr</a></td>
+</tr>
+<!-- İkinci kişinin bilgileri -->
+<tr style="font-weight: bold">
+    <td>Öğr. Gör. Eda GÜNGÖR</td>
+    <td>0 366 280 55 14</td>
+    <td><a href="mailto:edagungor@kastamonu.edu.tr">edagungor@kastamonu.edu.tr</a></td>
+</tr>
+<!-- Üçüncü kişinin bilgileri -->
+<tr style="font-weight: bold">
+    <td>Öğr. Gör. Hediye SAĞLAM</td>
+    <td>0 366 280 55 07</td>
+    <td><a href="mailto:hediyesaglam@kastamonu.edu.tr">hediyesaglam@kastamonu.edu.tr</a></td>
+</tr>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+  </div>
+
+  
+
+
+<!-- sidebar --> 
+<script>
+    // JavaScript Kodları
+    document.addEventListener('DOMContentLoaded', function() {
+    const menuLinks = document.querySelectorAll('.menu-link');
+    const sections = document.querySelectorAll('.custom-section');
+
+    // Sayfa ilk yüklendiğinde sadece ana sayfa içeriğini göster
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+    document.getElementById('ana-sayfa').style.display = 'block';
+
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            targetSection.style.display = 'block';
+        });
+    });
+});
+    </script>
+<!-- sidebar --> 
+  <script src="js/accorscript.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/jquery-3.0.0.min.js"></script> 
+<script src="js/plugin.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- sidebar --> 
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script> 
+<script src="js/custom.js"></script>
+<script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<script src="media/system/js/core.min.js?3b2c7481f479d57ca6a59403341a2e378a288779"></script>
+<script src="media/system/js/showon-es5.min.js?4773265a19291954f19755d6f2ade3ca7ed9022f" defer="" nomodule=""></script>
+<script src="media/system/js/messages-es5.min.js?42aff9798f66753bdb448b926baf2140f17f2c07" nomodule="" defer=""></script>
+<script src="media/vendor/jquery/js/jquery.min.js?3.6.0"></script>
+<script src="media/legacy/js/jquery-noconflict.min.js?04499b98c0305b16b373dff09fe79d1290976288"></script>
+<script src="media/system/js/showon.min.js?bfc733e48a923aaffb3d959cd04f176bad7d7d52" type="module"></script>
+<script src="media/plg_system_uikitassets/js/uikit.min.js?8f8ba9fae00bb2d863218fde5dcb4cc5" defer=""></script>
+<script src="media/system/js/messages.min.js?7425e8d1cb9e4f061d5e30271d6d99b085344117" type="module"></script>
+<script src="components/com_sppagebuilder/assets/js/common.js"></script>
+<script src="components/com_sppagebuilder/assets/js/jquery.parallax.js?73ee45a029f5bc0e36fdf5699a0b5203"></script>
+<script src="components/com_sppagebuilder/assets/js/sppagebuilder.js?73ee45a029f5bc0e36fdf5699a0b5203" defer=""></script>
+<script src="components/com_sppagebuilder/assets/js/sp_carousel.js"></script>
+<script src="components/com_sppagebuilder/assets/js/jquery.bxslider.min.js" defer=""></script>
+<script src="templates/shaper_helixultimate/js/bootstrap.bundle.min.js"></script>
+<script src="templates/shaper_helixultimate/js/main.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"85e3007838d66956","version":"2024.2.4","token":"cd0b4b3a733644fc843ef0b185f98241"}' crossorigin="anonymous"></script>
+<script src="js/jquery.min.js"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/jquery-3.0.0.min.js"></script> 
+<script src="js/plugin.js"></script> 
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+<script>
+   jQuery(function(){
+      "use strict";
+      jQuery("#sppb-addon-0bHjX1oL8d0cJjMZysINN .sppb-article-scroller-wrap").bxSlider({
+         minSlides: 3,
+         mode: "vertical",
+         speed: 500,
+         pager: false,
+         controls: false,
+         auto: true,
+         moveSlides: 1,
+         adaptiveHeight:true,
+         touchEnabled:false,
+         autoStart:true
+      });
+   });
+</script>
+<script>
+   $(document).ready(function(){
+   $(".fancybox").fancybox({
+   openEffect: "none",
+   closeEffect: "none"
+   });
+   
+   $(".zoom").hover(function(){
+   
+   $(this).addClass('transition');
+   }, function(){
+   
+   $(this).removeClass('transition');
+   });
+   });
+   
+</script> 
+<script>
+   jQuery(function(){
+      "use strict";
+      jQuery("#sppb-addon-CAXyFayWVVpzZp9V-zjlm .sppb-article-scroller-wrap").bxSlider({
+         minSlides: 3,
+         mode: "vertical",
+         speed: 1000,
+         pager: false,
+         controls: false,
+         auto: true,
+         moveSlides: 1,
+         adaptiveHeight:true,
+         touchEnabled:false,
+         autoStart:true
+      });
+   });
+   </script>
+
+<script>
+   $(document).ready(function(){
+   $(".fancybox").fancybox({
+   openEffect: "none",
+   closeEffect: "none"
+   });
+   
+   $(".zoom").hover(function(){
+   
+   $(this).addClass('transition');
+   }, function(){
+   
+   $(this).removeClass('transition');
+   });
+   });
+   
+</script> 
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+       var dropdowns = document.querySelectorAll('.menu-area-main > li');
+
+       dropdowns.forEach(function(dropdown) {
+           dropdown.addEventListener('click', function() {
+               var subMenu = this.querySelector('ul');
+               if (subMenu) {
+                   if (subMenu.style.display === 'block') {
+                       subMenu.style.display = 'none';
+                   } else {
+                       subMenu.style.display = 'block';
+                   }
+               }
+           });
+       });
+   });
+</script>
+</body>
+</html>

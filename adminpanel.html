@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title> CRİMYO ADMİN PANEL</title>
+</head>
+
+<body>
+    
+    <div class="lg:hidden flex justify-between p-5 h-20">
+        <img src="asset/tailwindcss-logotype.svg">
+        <svg onclick="Openbar()" class="cursor-pointer w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </div>
+    <div class=" grid lg:grid-cols-8 grid-cols-1  h-screen">
+        <!-- sidebar-->
+        <div id="sidebar" class="hidden lg:flex col-span-1 bg-gray-100 p-5 gap-4 flex flex-col ">
+            <!-- logo -->
+            <img src="images/okulpng2.png" class="hidden lg:block w-4/5 p-2">
+            <!-- fotoğraf -->
+            <div class="flex space-y-0 space-x-2 p-2 cursor-pointer items-center">
+                <img class="w-9 h-9 rounded-full" src="vesikalıklar/zuhal1.jpg"
+                    alt="">
+                <div class="space-y-0 font-medium basis-3/4 items-center">
+                    <div class="text-gray-800 text-sm">Zuhal Aslan Akyol</div>
+                    <div class="text-xs  text-gray-400">@zuhalaslanakyol</div>
+                </div>
+                <div class="basis-1/4 text-gray-500  items-end gap-0 flex flex-col justify-center">
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7">
+                        </path>
+                    </svg>
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <!-- search box -->
+            <div class="pt-2 relative text-gray-600">
+                <input
+                    class="border border-gray-300 w-full bg-white h-9 px-3 pl-6  rounded-lg text-sm focus:outline-none"
+                    type="search" name="search" placeholder="Arama">
+                <button type="submit" class="absolute left-2 top-0 mt-5 mr-5">
+                    <svg class="text-gray-400 h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                        viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
+                        xml:space="preserve" width="512px" height="512px">
+                        <path
+                            d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                    </svg>
+                </button>
+            </div>
+            <!-- navbar -->
+            <div class="flex flex-col">
+                <ul class="space-y-1 text-gray-700">
+                    <li>
+                        <a href="adminpanel.html"
+                            class="flex items-center p-2 text-sm font-medium rounded-lg  dark:hover:bg-gray-200 bg-gray-200">
+                            <svg class="w-6 h-6 text-gray-400 transition " fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                                </path>
+                            </svg>
+                            <span class="ml-3">Ana Sayfa</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="panelislem.html"
+                            class="flex items-center p-2 text-sm font-medium rounded-lg dark:hover:bg-gray-200">
+                            <svg class="w-6 h-6 text-gray-400 transition " fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
+                            </svg>
+                            <span class="ml-3">İşlemlerim</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex items-center p-2 text-sm font-medium  rounded-lg  dark:hover:bg-gray-200">
+                            <svg class="w-6 h-6 text-gray-400 transition " fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="ml-3">Son Zamanlar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="text-gray-500 font-bold text-xs p-1">Bölümler</h3>
+                <div class="flex flex-col">
+                    <ul class="space-y-1 list-inside list-disc">
+                        <li class="text-purple-500 pl-2  rounded-lg dark:hover:bg-gray-200 p-1 cursor-pointer">
+                            <span class="ml-3 text-gray-600 font-medium  text-sm ml-0">Bil Prog. </span>
+                        </li>
+                        <li class="text-green-500 pl-2  rounded-lg dark:hover:bg-gray-200 p-1 cursor-pointer">
+                            <span class="ml-3 text-gray-600 font-medium  text-sm ml-0">Çoçuk Gel. </span>
+                        </li>
+                        <li class="text-orange-500 pl-2  rounded-lg dark:hover:bg-gray-200 p-1 cursor-pointer">
+                            <span class="ml-3 text-gray-600 font-medium  text-sm ml-0">Adalet</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-span-7 border border-gray-200">
+            
+            <div class="flex p-5 flex-row justify-between items-center">
+                <h1 class="font-bold text-gray-600">Ana Sayfa</h1>
+                <div>
+                    <button type="button"
+                        class="py-2 px-4 mr-2 text-sm font-medium  focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100">Paylas</button>
+                    <button type="button"
+                        class="py-2 px-4  text-sm font-medium  focus:outline-none bg-purple-600 rounded-lg border border-purple-600 hover:bg-purple-800 text-white">Oluştur</button>
+                </div>
+            </div>
+            <hr />
+            
+            <div class="flex flex-col p-5 gap-4">
+                <div>
+                    <h3 class="font-medium text-xs text-gray-500">Projeler</h3>
+                </div>
+                <div class=" flex flex-wrap justify-between items-center gap-4">
+                    <a href="#"
+                        class="flex items-stretch bg-white rounded-lg border flex-row hover:bg-gray-100 max-h-22 w-48 ">
+                        <div class="p-4 py-3  text-white rounded-l-lg text-xs bg-pink-600">HR</div>
+                        <div class="flex justify-between items-center flex-row w-full">
+                            <div class=" flex  flex-col justify-between  p-2 leading-normal max-w-sm">
+                                <p class=" text-xs font-bold tracking-tight  text-gray-900 truncate w-20">
+                                    Haberler
+                                </p>
+                                <p class=" font-normal text-gray-400 text-xs">Tüm Haberler</p>
+                            </div>
+                            <svg class="text-gray-400 w-4 h-4 mr-4" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+                                </path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="flex items-stretch bg-white rounded-lg border flex-row hover:bg-gray-100 max-h-12 w-48 ">
+                        <div class="p-4 py-3  text-white rounded-l-lg text-xs bg-yellow-500">DR</div>
+                        <div class="flex justify-between items-center flex-row w-full">
+                            <div class=" flex  flex-col justify-between  p-2 leading-normal max-w-sm">
+                                <p class=" text-xs font-bold tracking-tight  text-gray-900 truncate w-20">
+                                    Duyurular
+                                </p>
+                                <p class=" font-normal text-gray-400 text-xs">Tüm Duyurular</p>
+                            </div>
+                            <svg class="text-gray-400 w-4 h-4 mr-4" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+                                </path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="flex items-stretch bg-white rounded-lg border flex-row hover:bg-gray-100 max-h-12 w-48 ">
+                        <div class="p-4 py-3  text-white rounded-l-lg text-xs bg-purple-600">ER</div>
+                        <div class="flex justify-between items-center flex-row w-full">
+                            <div class=" flex  flex-col justify-between  p-2 leading-normal max-w-sm">
+                                <p class=" text-xs font-bold tracking-tight  text-gray-900 truncate w-20">
+                                    Etkinlikler
+                                </p>
+                                <p class=" font-normal text-gray-400 text-xs">Tüm Etkinlikler</p>
+                            </div>
+                            <svg class="text-gray-400 w-4 h-4 mr-4" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+                                </path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            
+    <script>
+        function Openbar() {
+            document.querySelector('#sidebar').classList.toggle('hidden')
+        }
+    </script>
+</body>
+
+</html>

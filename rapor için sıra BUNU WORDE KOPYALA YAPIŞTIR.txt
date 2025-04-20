@@ -1,0 +1,99 @@
+aga gerekirse ss al yapıştır ssler az kalırsa kodları ben halletmeye çalışacağım şu küçük iş bitsin gözünü seveyim 
+öptüm seni
+
+Vize 3. Bölüm
+Başlangıç cümlesi: Bu bölümde, Vize 3. Bölümün içeriği yer alacaktır.
+
+1. İletişim Sayfası
+Başlangıç cümlesi: İletişim sayfası bölümü, iletişim bilgilerini içerir.
+
+2. Dökümanlar Sayfası
+Başlangıç cümlesi: Dökümanlar sayfası bölümü, kullanıcıların erişebileceği belgeleri listeler.
+
+3. Bize Ulaşın Sayfası Tasarımı
+Başlangıç cümlesi: Bize ulaşın sayfası tasarımı bölümü, iletişim formunu ve detaylarını içerir.
+
+4. Bonus Puan Kanıtı
+Başlangıç cümlesi: Bonus puan kanıtı bölümü, projenin başarılarını gösterir.
+
+Vize 4. Bölüm
+Başlangıç cümlesi: Bu bölümde, Vize 4. Bölümün içeriği yer alacaktır.
+
+1. Bölüm Sayfaları - Bilgisayar Bölümü
+Başlangıç cümlesi: Bu bölümde, bilgisayar bölümü sayfalarının tasarımı açıklanacaktır.
+
+1. Ana Sayfa
+Başlangıç cümlesi: Bilgisayar bölümü ana sayfa tasarımı, bölümün ilk izlenimini sağlar.
+
+2. Genel Bilgiler
+Başlangıç cümlesi: Genel bilgiler sayfası, bölüm hakkında temel bilgileri içerir.
+
+3. Ders Programı
+Başlangıç cümlesi: Ders programı sayfası, bölümün derslerini ve saatlerini listeler.
+
+4. Ders Kataloğu
+Başlangıç cümlesi: Ders kataloğu sayfası, bölümün derslerini detaylı olarak açıklar.
+
+5. Akademik Kadro
+Başlangıç cümlesi: Akademik kadro sayfası, bölümdeki öğretim üyelerini listeler.
+
+6. Öğretim Planı
+Başlangıç cümlesi: Öğretim planı sayfası, bölümdeki derslerin sıralamasını içerir.
+
+7. Ders İçerikleri
+Başlangıç cümlesi: Ders içerikleri sayfası, derslerin detaylı içeriklerini sunar.
+
+8. Bütün Haberler
+Başlangıç cümlesi: Bütün haberler sayfası, bölümle ilgili güncel haberleri listeler.
+
+9. Bütün Duyurular
+Başlangıç cümlesi: Bütün duyurular sayfası, bölümle ilgili önemli duyuruları içerir.
+
+10. Bütün Etkinlikler
+Başlangıç cümlesi: Bütün etkinlikler sayfası, bölümdeki etkinlikleri listeler.
+
+11. İletişim
+Başlangıç cümlesi: İletişim sayfası, bölümle iletişim kurmak için gerekli bilgileri içerir.
+
+2. Bölüm Sayfaları - [Bölüm Adı]
+Başlangıç cümlesi: Bu bölümde, [bölüm adı] sayfalarının tasarımı açıklanacaktır.
+
+1. Ana Sayfa
+Başlangıç cümlesi: [Bölüm adı] ana sayfa tasarımı, bölümün ilk izlenimini sağlar.
+
+2. Genel Bilgiler
+Başlangıç cümlesi: Genel bilgiler sayfası, bölüm hakkında temel bilgileri içerir.
+
+3. Ders Programı
+Başlangıç cümlesi: Ders programı sayfası, bölümün derslerini ve saatlerini listeler.
+
+4. Ders Kataloğu
+Başlangıç cümlesi: Ders kataloğu sayfası, bölümün derslerini detaylı olarak açıklar.
+
+5. Akademik Kadro
+Başlangıç cümlesi: Akademik kadro sayfası, bölümdeki öğretim üyelerini listeler.
+
+6. Öğretim Planı
+Başlangıç cümlesi: Öğretim planı sayfası, bölümdeki derslerin sıralamasını içerir.
+
+7. Ders İçerikleri
+Başlangıç cümlesi: Ders içerikleri sayfası, derslerin detaylı içeriklerini sunar.
+
+8. Bütün Haberler
+Başlangıç cümlesi: Bütün haberler sayfası, bölümle ilgili güncel haberleri listeler.
+
+9. Bütün Duyurular
+Başlangıç cümlesi: Bütün duyurular sayfası, bölümle ilgili önemli duyuruları içerir.
+
+10. Bütün Etkinlikler
+Başlangıç cümlesi: Bütün etkinlikler sayfası, bölümdeki etkinlikleri listeler.
+
+11. İletişim
+Başlangıç cümlesi: İletişim sayfası, bölümle iletişim kurmak için gerekli bilgileri içerir.
+
+Sonuç ve Öneriler
+Başlangıç cümlesi: Sonuç ve öneriler bölümü, çalışmanın sonuçlarını ve gelecek adımları sunar.
+
+Kaynakça
+Başlangıç cümlesi: Kaynakça bölümü, çalışmada kullanılan kaynakların listesini içerir.
+

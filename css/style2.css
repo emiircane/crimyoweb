@@ -1,0 +1,17 @@
+.logo2 {
+    width: 10px; /* veya istediğiniz genişliği belirleyin */
+    height: auto; /* Genişlik oranına göre otomatik olarak yüksekliği ayarlayın */
+}
+.mb-3 {
+    margin-bottom: 1.5cm;
+  }
+.kart-sira {
+    padding-top: 20px; /* Üstteki sıra için boşluk */
+    margin-bottom: 15px; /* Kart sıraları arasındaki boşluk */
+  }
+  body {
+    background-color: #f0cea0;
+  }
+  .white-text {
+    color: white;
+}

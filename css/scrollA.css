@@ -1,0 +1,76 @@
+:root {
+    --background: #1F2336;
+    --scrollbar-background: #313852;
+    --text: #F1F1F1;
+    --text-active: #F1F1F180;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    height: 100vh;
+    background-color: var(--background);
+    overflow-x: hidden; /* Sayfanın yatay kaydırmasını kapat */
+}
+
+.container27 {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    overflow-x: auto; /* Yatay kaydırmayı aktif et */
+}
+
+.container27 .card {
+    min-width: calc(10% - 1.5rem); /* Kartların genişliğini %10 olarak ayarla */
+    min-height: 100px;
+    color: var(--text);
+    display: flex;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    scroll-snap-align: start;
+}
+
+.container27 .card:nth-child(1) {
+    background-image: linear-gradient(to bottom, #db2b39, #db2b39);
+}
+
+.container27 .card:nth-child(2) {
+    background-image: linear-gradient(to bottom, #29335c, #29335c);
+}
+
+.container27 .card:nth-child(3) {
+    background-image: linear-gradient(to bottom, #f3a712, #f3a712);
+}
+
+.container27 .card:nth-child(4) {
+    background-image: linear-gradient(to bottom, #f0cea0, #f0cea0);
+}
+
+.container27 .card:nth-child(5) {
+    background-image: linear-gradient(to bottom, #534d41, #534d41);
+}
+
+.container27 .card:nth-child(6) {
+    background-image: linear-gradient(to bottom, #f0cea0, #f0cea0);
+}
+
+.container27 .card:nth-child(7) {
+    background-image: linear-gradient(to bottom, #f3a712, #f3a712);
+}
+
+.container27 .card:nth-child(8) {
+    background-image: linear-gradient(to bottom, #29335c, #29335c);
+}
+
+.container27 .card:nth-child(9) {
+    background-image: linear-gradient(to bottom, #db2b39, #db2b39);
+}
+

@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vertical Tabs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+            type='text/css'
+        >
+        <link rel="stylesheet" type="text/css" href="olusturmenu/style.css">
+        <style>
+        .tab-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* İçerikler arasındaki boşluk */
+}
+
+.tab-content {
+    flex: 1 1 300px; /* Her içeriğin minimum genişliği 300px, esneklikle büyüyebilir */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.haber-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.haber-form label {
+    margin-bottom: 5px;
+}
+
+.haber-form input[type="text"],
+.haber-form input[type="file"],
+.haber-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.haber-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.haber-form button:hover {
+    background-color: #0056b3;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="tabs-container">
+            <ul class="tabs">
+                <li>
+                    <a id="tab1" title="Your Idea & Vision" href="#tab1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bulb" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"></path>
+                            <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"></path>
+                            <path d="M9.7 17l4.6 0"></path>
+                        </svg>
+                        Haber Ekle
+                    </a>
+                </li>
+                <li>
+                    <a id="tab2" title="Product Specification" href="#tab2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-description" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+                            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
+                            <path d="M9 17h6"></path>
+                            <path d="M9 13h6"></path>
+                        </svg>
+                        Duyuru Ekle
+                    </a>
+                </li>
+                <li>
+                    <a id="tab3" title="UX/UI Design" href="#tab3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brush" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M3 21v-4a4 4 0 1 1 4 4h-4"></path>
+                            <path d="M21 3a16 16 0 0 0 -12.8 10.2"></path>
+                            <path d="M21 3a16 16 0 0 1 -10.2 12.8"></path>
+                            <path d="M10.6 9a9 9 0 0 1 4.4 4.4"></path>
+                        </svg>
+                        Etkinlik Ekle
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content-wrapper">
+                <section id="tab1-content" class="tab-content">
+                    <!-- Haber oluşturucu formu -->
+                    <form class="haber-form">
+                        <label for="haber-baslik">Haber Başlığını Yazın:</label>
+                        <input type="text" id="haber-baslik" name="haber_baslik">
+            
+                        <label for="haber-resim">Haberin Kapak Fotoğrafı:</label>
+                        <input type="file" id="haber-resim" name="haber_resim" accept="image/*">
+            
+                        <!-- Haber açıklama alanı -->
+                        <label for="haber-aciklama">Haber Açıklaması:</label>
+                        <textarea id="haber-aciklama" name="haber_aciklama" rows="4" cols="50"></textarea>
+            
+                        <!-- Haber ekleme butonu -->
+                        <button type="submit">Haberi Ekle</button>
+                    </form>
+                </section>
+                <section id="tab2-content" class="tab-content">
+                    <form class="haber-form">
+                        <label for="haber-baslik">Duyuru Başlığını Yazın:</label>
+                        <input type="text" id="haber-baslik" name="haber_baslik">
+            
+                        <label for="haber-resim">Duyuru Kapak Fotoğrafı:</label>
+                        <input type="file" id="haber-resim" name="haber_resim" accept="image/*">
+            
+                        <!-- Haber açıklama alanı -->
+                        <label for="haber-aciklama">Duyuru Açıklaması:</label>
+                        <textarea id="haber-aciklama" name="haber_aciklama" rows="4" cols="50"></textarea>
+            
+                        <!-- Haber ekleme butonu -->
+                        <button type="submit">Duyuruyu Ekle</button>
+                    </form>
+                </section> 
+
+                <section id="tab3-content" class="tab-content">
+                    <form class="haber-form">
+                        <label for="haber-baslik">Etkinlik Başlığını Yazın:</label>
+                        <input type="text" id="haber-baslik" name="haber_baslik">
+            
+                        <label for="haber-resim">Etkinlik Kapak Fotoğrafı:</label>
+                        <input type="file" id="haber-resim" name="haber_resim" accept="image/*">
+            
+                        <!-- Haber açıklama alanı -->
+                        <label for="haber-aciklama">Etkinlik Açıklaması:</label>
+                        <textarea id="haber-aciklama" name="haber_aciklama" rows="4" cols="50"></textarea>
+            
+                        <!-- Haber ekleme butonu -->
+                        <button type="submit">Etkinliği Ekle</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <script src="olusturmenu/script.js"></script>
+    </body>
+</html>
+    
